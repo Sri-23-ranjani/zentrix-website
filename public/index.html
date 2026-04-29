@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZENTRIX | AI Debugging Agent</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">ZENTRIX</div>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#demo" class="nav-btn">Book Demo</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">AI-Powered DevOps Debugging Agent</span>
+      <h1>Find Root Causes Before Downtime Becomes Damage.</h1>
+      <p>
+        ZENTRIX runs as a background AI daemon inside cloud microservices systems,
+        continuously detecting failures, analyzing logs, and suggesting fixes like a DevOps engineer.
+      </p>
+      <div class="hero-buttons">
+        <a href="#demo" class="primary-btn">Book a Demo</a>
+        <a href="#workflow" class="secondary-btn">See How It Works</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="status-bar">
+        <span class="green-dot"></span> AI Agent Running
+      </div>
+      <div class="alert-card">
+        <h3>⚠ Payment Service Failure</h3>
+        <p>Root Cause: Database connection pool exhausted</p>
+        <p>Suggested Fix: Increase DB pool size and restart Payment Service</p>
+      </div>
+      <div class="metric-grid">
+        <div><strong>92%</strong><span>Accuracy</span></div>
+        <div><strong>60%</strong><span>Faster RCA</span></div>
+        <div><strong>24/7</strong><span>Monitoring</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="problem">
+    <h2>Why Debugging Microservices Is Hard</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Scattered Logs</h3>
+        <p>Logs, metrics, and traces are spread across multiple tools.</p>
+      </div>
+      <div class="card">
+        <h3>Unclear Root Cause</h3>
+        <p>Teams know something failed, but not exactly why it failed.</p>
+      </div>
+      <div class="card">
+        <h3>Downtime Pressure</h3>
+        <p>Every minute spent debugging affects users and business reliability.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <h2>What ZENTRIX Does</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>AI Root Cause Detection</h3>
+        <p>Identifies the first failing component in complex systems.</p>
+      </div>
+      <div class="feature">
+        <h3>Daemon Monitoring</h3>
+        <p>Runs silently in the background and monitors systems continuously.</p>
+      </div>
+      <div class="feature">
+        <h3>Log & Metric Analysis</h3>
+        <p>Reads logs, latency, CPU, memory, and failure signals together.</p>
+      </div>
+      <div class="feature">
+        <h3>Smart Fix Suggestions</h3>
+        <p>Explains what failed, why it happened, and what action to take.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="workflow" class="workflow">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">1. Cloud Microservices Running</div>
+      <div class="step">2. AI Daemon Monitors Logs & Metrics</div>
+      <div class="step">3. Anomaly Detected Automatically</div>
+      <div class="step">4. AI Finds Root Cause</div>
+      <div class="step">5. Fix Suggestion Sent to Dashboard</div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <h2>What Teams Say</h2>
+    <div id="reviewList" class="review-grid"></div>
+  </section>
+
+  <section class="add-review">
+    <h2>Add Company Review</h2>
+    <form id="reviewForm">
+      <input type="text" id="company" placeholder="Company Name" required />
+      <input type="text" id="role" placeholder="Your Role" required />
+      <textarea id="review" placeholder="Your review about ZENTRIX" required></textarea>
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
+
+  <section id="demo" class="demo">
+    <h2>Book a Demo</h2>
+    <p>Want to see how ZENTRIX works inside your microservices system?</p>
+    <form id="demoForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="text" id="demoCompany" placeholder="Company Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <textarea id="message" placeholder="Tell us about your system"></textarea>
+      <button type="submit">Request Demo</button>
+    </form>
+    <p id="demoMsg"></p>
+  </section>
+
+  <footer>
+    <h3>ZENTRIX</h3>
+    <p>AI Debugging Agent for Cloud Microservices</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
